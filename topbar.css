@@ -1,18 +1,140 @@
-body {
+body{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
+    background:black;
+    color:white;
+    text-decoration: none;
 }
-nav a {
-    font-size:large;
-    color:black;
-    text-decoration: underline;
-    font-style:italic;
-    text-decoration-color: orange;
-    text-decoration-thickness: 0px;
 
-    transition: 1.5s;
+a{
+    text-decoration:none;
+    color:currentColor;
 }
-nav a:hover {
-    text-decoration-thickness: 4px; 
+
+[class*="underlinelink-"]:after
+{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 7.5%;
+    left: 100%;
+    position: absolute;
+    background: orange;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+[class*="underlinelink-"].highlighted:after{ 
+    width: 100%; 
+    left: 0; 
+}
+
+#logo
+{
+    font-size:2em;
+    text-align:right;
+    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    max-width:fit-content;
+    margin:auto;
+}
+
+
+#logo h1
+{
+    position: relative;
+    margin: 0%; 
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+}
+
+#logo h1:after
+{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 7.5%;
+    left: 100%;
+    position: absolute;
+    background: orange;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#logo h1.highligted:after{ 
+    width: 100%; 
+    left: 0; 
+}
+
+#logo-firstline h1:after
+{
+    left:100%;
+}
+
+#logo-secondline h1:after
+{
+    left: 0%;
+}
+
+#logo-period
+{
+    color:orange;
+}
+
+#logo-period h1:after
+{
+    background:transparent;
+}
+
+#motto
+{
+    font-style:italic;
+    font-size:20px;
+    letter-spacing: 0.5px;
+}
+
+.navbar { 
+    margin: 0 auto; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    text-align: center;
+  }
+
+.navbar a { 
+    font-size: large;
+    font-style: italic;
+    font-weight: 600;
+
+    position: relative; 
+    padding: 15px 0;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+  }
+
+.navbar a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 10%;
+    left: 75%;
+    position: absolute;
+    background: orange;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+#donate {
+    color: #11D08D;
+}
+#donate:after {
+    background: #11D08D;
 }
