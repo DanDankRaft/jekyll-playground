@@ -6,12 +6,13 @@ body {
 nav a {
     font-size:large;
     color:black;
-    text-decoration: none;
+    text-decoration: underline;
     font-style:italic;
-    font-weight:bold;
-    transition: 3s;
+    text-decoration-color: orange;
+    text-decoration-thickness: 0px;
+
+    transition: 1.5s;
 }
 nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: orange;
+    text-decoration-thickness: 4px; 
 }
