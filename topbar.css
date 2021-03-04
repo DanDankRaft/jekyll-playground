@@ -38,12 +38,13 @@ a{
     height: 7.5%;
     left:100%;
     position: absolute;
-    background: #FA8334;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    background: transparent;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s, background 0.3s ease 0s;
     width: 0;
 }
 
 #logo h1.highligted:after, [class*="underline"]:hover:after{ 
+    background: #FA8334;
     width: 100%; 
     left: 0; 
 }
@@ -93,6 +94,7 @@ a{
     font-style:italic;
     font-size:20px;
     letter-spacing: 0.5px;
+    margin-top: 2em;
 }
 
 .navbar { 
@@ -121,6 +123,6 @@ a{
 #donate {
     color: #16DB93;
 }
-#donate:after {
+#donate:hover:after {
     background: #16DB93;
 }
