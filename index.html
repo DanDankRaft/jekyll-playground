@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>top bar</title>
+        <title>The Comet Progressive | UTD's official unofficial publication</title>
         <link rel="stylesheet" href="topbar.css">
     </head>
-    <body>
-        <div id="logo"><a href="index"><h1 id="logo-firstline"><span style="font-size:0.5em;">THE</span> Comet</h1></br>
-            <h1 id="logo-secondline">Progressive<span id="logo-period">.</span></h1></a>
-        </div>
+    <body class="lightmode">
+
+        <a href="/"><div class="noselecttext" id="logo"><table><tr>
+            <th>
+                <h1 class="underline"><span style="font-size:0.5em;">THE</span> Comet</h1>
+                    </br>
+                <h1 class="underline-right">Progressive</h1>
+            </th>
+            <th>
+                <h1 id="logo-period">.</h1>
+            </th>
         <script src="logo.js"></script>
-        ~<div id="motto">Uh oh!</div>~
+        </tr></table></div></a>
+        ~<span id="motto">Uh oh!</span>~
         <script src="motto.js"></script>
-    <hr>   
+    <hr></hr>
         <nav class="navbar">
-            <a href="#">Latest</a> &#9679;
-            <a href="#">Op-eds</a> &#9679;
-            <a href="#">Campus Orgs</a> &#9679;
-            <a id="donate" href="#">DONATE</a>
+            <a class="underline" href="#">Latest</a> &#9679;
+            <a class="underline" href="#">Campus Orgs</a> &#9679;
+            <a class="underline" href="#" style="color: #FA8334" onclick="darkMode()">Dark/Light Mode</a> &#9679;
+            <script src="darkmode.js"></script>
+            <a class="underline" id="donate" href="#">DONATE</a>
         </nav>
-    <hr>
+    <hr></hr>
     </body>
 </html>
