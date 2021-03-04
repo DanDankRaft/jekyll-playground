@@ -7,16 +7,16 @@ let mottos = [
     "By Antifa supersoldiers, for Antifa supersoldiers",
     "Gay, but not just for Temoc",
     "Exploring the Tobor-Lunch dialectic",
-    "AMP but biased",
+    "AMP, but biased",
     "JSOM is literally 1984",
     "ATEC is literally Vuvuzuela",
     "Bisexual Enarc",
     "Socialism is when SG actually does stuff",
-    "Jason Smith is awesome!",
+    "Even more underfunded then A&H!",
     "Want to advertise here? Too fucking bad!",
     "Are you based and good at writing? submit an op-ed today!",
     ];
 
 
 var index = Math.floor(Math.random() * mottos.length);
-document.getElementById("motto").innerHTML = mottos[index];
+document.getElementById("motto").innerHTML = '~' + mottos[index] + '~';
