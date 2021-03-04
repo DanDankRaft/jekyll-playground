@@ -1,10 +1,28 @@
 body{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
 
-    background:black;
-    color:white;
-    text-decoration: none;
+}
+
+body.darkmode
+{
+    color:#EBEEF0;
+    background:#14110F;
+
+    transition: 1s;
+}
+
+body.lightmode
+{
+    color:#14110f;
+    background:#EBEEF0;
+
+    transition: 1s;
+}
+
+hr
+{
+    border: 1px solid;
 }
 
 a{
@@ -12,80 +30,62 @@ a{
     color:currentColor;
 }
 
-[class*="underlinelink-"]:after
+[class*="underline"]:after
 {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
     height: 7.5%;
-    left: 100%;
+    left:100%;
     position: absolute;
-    background: orange;
+    background: #FA8334;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
-[class*="underlinelink-"].highlighted:after{ 
+#logo h1.highligted:after, [class*="underline"]:hover:after{ 
     width: 100%; 
     left: 0; 
+}
+
+.underline-right:after
+{
+    left:0%;
+}
+
+.noselecttext
+{
+    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 }
 
 #logo
 {
     font-size:2em;
     text-align:right;
-    user-select:none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     max-width:fit-content;
     margin:auto;
 }
 
+#logo th
+{
+    vertical-align: bottom;
+}
 
 #logo h1
 {
-    position: relative;
-    margin: 0%; 
+    margin: 0%;
     display: inline-block;
     padding: 5px 0px;
     position: relative;
 }
 
-#logo h1:after
-{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    height: 7.5%;
-    left: 100%;
-    position: absolute;
-    background: orange;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-#logo h1.highligted:after{ 
-    width: 100%; 
-    left: 0; 
-}
-
-#logo-firstline h1:after
-{
-    left:100%;
-}
-
-#logo-secondline h1:after
-{
-    left: 0%;
-}
-
 #logo-period
 {
-    color:orange;
-}
-
-#logo-period h1:after
-{
-    background:transparent;
+    color:#FA8334;
+    font-size: 3em;
+    top: 0.05em;
 }
 
 #motto
@@ -108,33 +108,19 @@ a{
     font-style: italic;
     font-weight: 600;
 
-    position: relative; 
-    padding: 15px 0;
     display: inline-block;
     padding: 5px 0px;
     position: relative;
   }
 
-.navbar a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    height: 10%;
+.navbar a:after {
+    height: 12.5%;
     left: 75%;
-    position: absolute;
-    background: orange;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.navbar a:hover:after { 
-    width: 100%; 
-    left: 0; 
 }
 
 #donate {
-    color: #11D08D;
+    color: #16DB93;
 }
 #donate:after {
-    background: #11D08D;
+    background: #16DB93;
 }
