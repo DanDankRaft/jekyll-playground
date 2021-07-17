@@ -1,0 +1,56 @@
+---
+
+---
+
+@import 'global';
+
+
+.logo
+{
+    font-family: Georgia;
+    font-size: 2em;
+    text-align: right;
+    border-collapse: collapse;
+    position: relative;
+}
+
+
+.logo h1
+{
+    margin: 0;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.logo-top:after, .logo-bottom:after
+{
+    height: 10%;
+    bottom: 8.9px;
+}
+
+.logo-top.hover:after, .logo-bottom.hover:after
+{
+    background: $site-orange;
+    width: 100%; 
+    left: 0;
+}
+
+.logo-bottom:after
+{
+    left: 0%;
+}
+
+
+.logo-period
+{
+    color: $site-orange;
+    font-size: 3em;
+    position: relative;
+    top: 0.300em;
+}
+
+.logo-the
+{
+    font-size: 0.5em;
+}

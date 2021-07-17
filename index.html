@@ -1,36 +1,33 @@
+---
+
+---
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"></meta>
         <title>
-            The Comet Progressive. UTD's official unofficial publication
+            The Comet Progressive | UTD's official unofficial publication
         </title>
-        <link rel="stylesheet" href="topbar.css">
+        <link rel="stylesheet" href="css/topbar.css">
     </head>
+    
     <body class="lightmode">
-
-        <div class="noselecttext" id="logo"><a href="?"><table><tr>
-            <th>
-                <h1 class="underline"><span style="font-size:0.5em;">THE</span> Comet</h1>
-                    </br>
-                <h1 class="underline-right">Progressive</h1>
-            </th>
-            <th>
-                <h1 id="logo-period">.</h1>
-            </th>
-        <script src="logo.js"></script>
-        </tr></table></a></div>
-        <div class="noselecttext" id="motto">~Uh oh!~</div>
+        <div style="margin-left: auto; margin-right:auto; width: fit-content;" id="frontpage-logo">{% include logo.html %}</div>
+                
+        <div class="noselecttext" id="motto">~Uh oh! Motto not loaded!~</div>
         <script src="motto.js"></script>
-    <hr></hr>
+
+        <hr></hr>
+
         <nav class="navbar">
             <a class="underline" href="#">Latest</a> &#9679;
             <a class="underline" href="#">Campus Orgs</a> &#9679;
-            <a class="underline" href="#" style="color: #FA8334" onclick="darkMode()">Dark/Light Mode</a> &#9679;
+            <a class="underline" href="#" style="color: #fa8334" onclick="darkMode()">Dark/Light Mode</a> &#9679;
             <script src="darkmode.js"></script>
             <a class="underline" id="donate" href="#">DONATE</a>
         </nav>
-    <hr></hr>
+
+        <hr></hr>
     
     </body>
 </html>
