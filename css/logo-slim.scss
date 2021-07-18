@@ -1,0 +1,46 @@
+---
+
+---
+
+@import 'global';
+
+.logo-slim
+{
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+    
+}
+
+.logo-slim-the
+{
+    font-size: 0.5em;
+}
+
+.logo-slim-period
+{
+    font-size: 1.5em;
+    position: relative;
+    bottom: 0.01em;
+    color: $site-orange;
+}
+
+.title-text
+{
+    display: inline-block;
+    width: fit-content;
+}
+
+.title-text.underline
+{
+    position: relative;
+}
+
+.title-text.underline:after
+{
+    height: 16%;
+    bottom: 0.1%;
+
+    left: 0;
+}

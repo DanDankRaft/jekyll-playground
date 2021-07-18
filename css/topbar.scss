@@ -1,0 +1,86 @@
+---
+
+---
+
+@import 'global';
+
+body{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 15px;
+
+}
+
+body.darkmode
+{
+    color: $site-light;
+    background: $site-dark;
+
+    transition: color 1s, background 1s;
+}
+
+body.lightmode
+{
+    color: $site-dark;
+    background: $site-light;
+
+    transition: color 1s, background 1s;
+}
+
+hr
+{
+    border: 1px solid;
+}
+
+a{
+    text-decoration:none;
+    color:currentColor;
+}
+
+.underline-right:after
+{
+    left:0%;
+}
+
+#motto
+{
+    font-style:italic;
+    font-size:1.5em;
+    letter-spacing: 0.5px;
+    margin-top: 2em;
+}
+
+.navbar { 
+    margin: 0 auto; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    text-align: center;
+  }
+
+.navbar a { 
+    font-size: large;
+    font-style: italic;
+    font-weight: 600;
+
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+  }
+
+.navbar a:after {
+    height: 12.5%;
+    left: 75%;
+}
+
+#donate {
+    color: #16DB93;
+}
+#donate:hover:after {
+    background: #16DB93;
+}
+
+#frontpage-logo
+{
+    font-size: calc(min(3.5vw, 15px));
+}

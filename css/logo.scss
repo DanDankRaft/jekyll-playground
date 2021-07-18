@@ -1,0 +1,56 @@
+---
+
+---
+
+@import 'global';
+
+.logo
+{
+    font-family: Georgia;
+
+    font-size: 2em;
+
+    text-align: right;
+}
+
+.logo h1
+{
+    //negative horizontal margin gets the text closer together.
+    //otherwise it looks too spaced out
+    margin: -0.15em 0;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.logo .logo-top:after, .logo .logo-bottom:after
+{
+    //alters the height of the underline-on-hover
+    height: 16%;
+    bottom: 0.1%;
+}
+
+.logo-top.hover:after, .logo-bottom.hover:after
+{
+    background: $site-orange;
+    width: 100%; 
+    left: 0;
+}
+
+.logo .logo-bottom:after
+{
+    left: 0;
+}
+
+
+.logo-period
+{
+    color: $site-orange;
+    font-size: 3em;
+    bottom: 0.125em;
+}
+
+.logo-the
+{
+    font-size: 0.5em;
+}

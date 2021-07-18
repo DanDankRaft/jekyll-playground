@@ -1,0 +1,38 @@
+$site-orange:   #FA8334;
+$site-dark:     #14110F;
+$site-light:    #EBEEF0;
+$site-green:    #16DB93;
+
+
+.noselecttext
+{
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.underline::after
+{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 7.5%;
+    left:100%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s, background 0.3s ease 0s;
+    width: 0;
+}
+
+.underline:hover:after
+{ 
+    background: $site-orange;
+    width: 100%; 
+    left: 0;
+}
+
+.center-content
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
