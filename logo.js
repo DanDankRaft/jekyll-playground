@@ -1,17 +1,5 @@
-var logo = document.getElementById('logo');
-
-logo.addEventListener('mouseenter', changeDefOver);
-logo.addEventListener('mouseleave', changeDefOut);
-
-function changeDefOver(e) {
-  Array.prototype.slice.call(logo.getElementsByTagName("*")).forEach(element => {
-      element.classList.toggle('highligted');
-  });
-  //console.log("wuzzah!");
-}
-
-function changeDefOut(e) {
-    Array.prototype.slice.call(logo.getElementsByTagName("*")).forEach(element => {
-        element.classList.toggle('highligted');
-    });
+function logoOnMouseHover(element)
+{
+    element.getElementsByClassName("logo-top")[0].classList.toggle("hover");
+    element.getElementsByClassName("logo-bottom")[0].classList.toggle("hover");
 }
