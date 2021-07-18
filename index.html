@@ -10,9 +10,9 @@
         </title>
         <link rel="stylesheet" href="css/topbar.css">
     </head>
-    
+
     <body class="lightmode">
-        <div style="margin-left: auto; margin-right:auto; width: fit-content;" id="frontpage-logo">{% include logo.html %}</div>
+        <div class="center-content" id="frontpage-logo">{% include logo.html %}</div>
                 
         <div class="noselecttext" id="motto">~Uh oh! Motto not loaded!~</div>
         <script src="motto.js"></script>
@@ -29,5 +29,15 @@
 
         <hr></hr>
     
+        <div class="center-content">
+            {% include logo-slim.html %}
+        </div>
+        <div class="center-content">
+            {% include logo.html %}
+        </div>
+        <div class="center-content">
+            {% include logo-slim.html %}
+        </div>
+
     </body>
 </html>

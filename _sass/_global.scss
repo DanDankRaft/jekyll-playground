@@ -23,8 +23,16 @@ $site-green:    #16DB93;
     width: 0;
 }
 
-.underline:hover:after{ 
+.underline:hover:after
+{ 
     background: $site-orange;
     width: 100%; 
     left: 0;
+}
+
+.center-content
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }

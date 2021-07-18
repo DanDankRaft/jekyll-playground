@@ -1,6 +1,8 @@
 function darkmodestartup()
 {
     var body = document.body;
+    //cookie functionality - if there are no cookies for this page, add one to include dark mode
+
     body.classList.toggle("lightmode");
 }
 
