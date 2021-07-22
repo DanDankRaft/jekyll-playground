@@ -28,16 +28,16 @@
         </nav>
 
         <hr></hr>
-    
-        <div class="center-content">
-            {% include logo-slim.html %}
-        </div>
-        <div class="center-content">
-            {% include logo.html %}
-        </div>
-        <div class="center-content">
-            {% include logo-slim.html %}
-        </div>
-
+        <p>
+        {% for post in site.posts %}
+        <p>
+            <a href="{{ post.url }}">
+                <img src="{{ post.thumbnail }}" />
+                <h2>{{ post.title }}</h2>
+                {{ post.excerpt }}
+            </a>
+        </p>
+      {% endfor %}
+    </p>
     </body>
 </html>
