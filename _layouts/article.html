@@ -10,7 +10,7 @@ layout: default
         <link rel="stylesheet" href="/css/article.css?">
     </head>
     <body class="lightmode">
-        <div style="margin-right: auto;">{% include logo.html %}</div>
+        <div class="center-content">{% include logo.html %}</div>
 
         <hr></hr>
 
@@ -30,16 +30,28 @@ layout: default
                 <h2>By {{ page.author }} | {{ page.date | date_to_string }}</h2>
             </div>
             <p id="article-excerpt"> {{ page.excerpt }} </p>
-            <div id="article-thumbnail" alt="photo of {{ page.thumbnail-description }}">
-                <img src="{{ page.thumbnail }}"/>
-                <p>{{ page.thumbnail-description }}</p>
-                <p>Credit: {{ page.thumbnail-credit }}</p>
-            </div>
+            <figure id="article-thumbnail">
+                <img src="{{ page.thumbnail }}" alt="photo of {{ page.thumbnail-description }}"/>
+                <figcaption>{{ page.thumbnail-description }}</figcaption>
+                <figcaption>Credit: {{ page.thumbnail-credit }}</figcaption>
+            </figure>
             
 
             <article>
                 {{ content }}
             </article>    
+        </div>
+
+        <div id="article-bottom">
+            <hr>
+            <div id="article-bottom-info">
+                <p>Share: [PLACEHOLDER]</p>
+                <p>About The Author: [PLACEHOLDER]</p>
+                <p>Tags: [PLACEHOLDER]</p>
+            </div>
+            <div class="center-content" style="font-size: 0.9em;">{% include logo.html %}</div>
+            <p style="font-size: 1.2em;">About</p>
+            <hr>
         </div>
         
 

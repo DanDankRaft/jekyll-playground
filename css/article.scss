@@ -12,6 +12,11 @@
         width: 90.5vw;
     }
 
+    #article-bottom
+    {
+        width: 90.5vw;
+    }
+
     #article-title h1
     {
         font-size: 2em;
@@ -28,6 +33,11 @@
         font-size: 16px;
     }
 
+    #article-bottom
+    {
+        width: 80.5vw;
+    }
+
     #article-title h1
     {
         font-size: 3em;
@@ -42,6 +52,11 @@
         width: 60vw;
     }
 
+    #article-bottom
+    {
+        width: 60vw;
+    }
+
     #article-title h1
     {
         font-size: 3em;
@@ -52,8 +67,17 @@
 
 article
 {
-    text-align: justify;
     font-family: 'Domine', serif;
+}
+
+article p
+{
+    text-align: justify;
+}
+
+article
+{
+    text-align: left;
 }
 
 article::first-letter
@@ -80,7 +104,7 @@ article::first-letter
 {
     border: solid 2px $site-orange;
     width: 250px;
-    margin: 5px 0 3px 0;
+    margin: 2px 0 5px 0;
 }
 
 #article-title h2
@@ -97,6 +121,17 @@ article::first-letter
     font-size: 18px;
 }
 
+#article-full-page a
+{
+    color: $site-green;
+    font-weight: bold;
+}
+
+#article-full-page a:hover
+{
+    color: $site-orange;
+}
+
 #article-excerpt
 {
     text-align: left;
@@ -108,6 +143,8 @@ article::first-letter
 #article-thumbnail
 {
     width: inherit;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #article-thumbnail img
@@ -116,10 +153,37 @@ article::first-letter
     object-fit: cover;
 }
 
-#article-thumbnail p
+#article-thumbnail figcaption
 {
     margin-top: 0;
     margin-bottom: 0.1em;
     text-align: left;
     font-size: 0.7em;
+}
+
+#article-bottom
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article-bottom-info
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#article-bottom-info p
+{
+    text-align: left;
+    font-size: 1.5em;
+
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+
+#article-bottom hr
+{
+    border: solid 2px $site-orange;
+    width: inherit;
 }
