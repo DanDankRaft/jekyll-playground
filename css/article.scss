@@ -1,0 +1,189 @@
+---
+
+---
+
+@import 'global';
+
+//portrait phones
+@media screen and (orientation: portrait)
+{
+    #article-full-page
+    {
+        width: 90.5vw;
+    }
+
+    #article-bottom
+    {
+        width: 90.5vw;
+    }
+
+    #article-title h1
+    {
+        font-size: 2em;
+    }
+
+}
+
+//landscape phones and tablets
+@media screen and (orientation: landscape) and (max-width: 992px)
+{
+    #article-full-page
+    {
+        width: 80.5vw;
+        font-size: 16px;
+    }
+
+    #article-bottom
+    {
+        width: 80.5vw;
+    }
+
+    #article-title h1
+    {
+        font-size: 3em;
+    }
+}
+
+//desktops
+@media screen and (orientation: landscape) and (min-width: 993px)
+{
+    #article-full-page
+    {
+        width: 60vw;
+    }
+
+    #article-bottom
+    {
+        width: 60vw;
+    }
+
+    #article-title h1
+    {
+        font-size: 3em;
+    }
+
+}
+
+
+article
+{
+    font-family: 'Domine', serif;
+}
+
+article p
+{
+    text-align: justify;
+}
+
+article
+{
+    text-align: left;
+}
+
+article::first-letter
+{
+    float: left;
+    margin-right: .2em;
+    font-size: 3em;
+    line-height: 0.8em;
+    border-right: 5px solid $site-orange;
+    padding: .2em 0.5em .75em 0;
+}
+
+#article-title
+{
+    text-align: left;
+}
+
+#article-title h1
+{
+    margin-bottom: 0;
+}
+
+#article-title hr
+{
+    border: solid 2px $site-orange;
+    width: 250px;
+    margin: 2px 0 5px 0;
+}
+
+#article-title h2
+{
+    font-size: 1.3em;
+    margin-top: 0;
+    font-family: 'Domine';
+}
+
+#article-full-page
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+#article-full-page a
+{
+    color: $site-green;
+    font-weight: bold;
+}
+
+#article-full-page a:hover
+{
+    color: $site-orange;
+}
+
+#article-excerpt
+{
+    text-align: left;
+    font-size: 1.2em;
+    font-family: 'Domine';
+    font-weight: 100;
+}
+
+#article-thumbnail
+{
+    width: inherit;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#article-thumbnail img
+{
+    width: inherit;
+    object-fit: cover;
+}
+
+#article-thumbnail figcaption
+{
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    text-align: left;
+    font-size: 0.7em;
+}
+
+#article-bottom
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article-bottom-info
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#article-bottom-info p
+{
+    text-align: left;
+    font-size: 1.5em;
+
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+
+#article-bottom hr
+{
+    border: solid 2px $site-orange;
+    width: inherit;
+}

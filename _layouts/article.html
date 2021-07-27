@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"></meta>
+        <title>{{ page.title }} | The Comet Progressive</title>
+        <link rel="stylesheet" href="/css/topbar.css">
+        <link rel="stylesheet" href="/css/article.css?">
+    </head>
+    <body class="lightmode">
+        <div class="center-content">{% include logo.html %}</div>
+
+        <hr></hr>
+
+        <nav class="navbar">
+            <a class="underline" href="#">Latest</a> &#9679;
+            <a class="underline" href="#">Campus Orgs</a> &#9679;
+            <a class="underline" href="#" style="color: #fa8334" onclick="darkMode()">Dark/Light Mode</a> &#9679;
+            <script src="/darkmode.js"></script>
+            <a class="underline" id="donate" href="#">DONATE</a>
+        </nav>
+
+        <hr></hr>
+        <div id="article-full-page">
+            <div id="article-title">
+                <h1>{{ page.title }}</h1>
+                <hr>
+                <h2>By {{ page.author }} | {{ page.date | date_to_string }}</h2>
+            </div>
+            <p id="article-excerpt"> {{ page.excerpt }} </p>
+            <figure id="article-thumbnail">
+                <img src="{{ page.thumbnail }}" alt="photo of {{ page.thumbnail-description }}"/>
+                <figcaption>{{ page.thumbnail-description }}</figcaption>
+                <figcaption>Credit: {{ page.thumbnail-credit }}</figcaption>
+            </figure>
+            
+
+            <article>
+                {{ content }}
+            </article>    
+        </div>
+
+        <div id="article-bottom">
+            <hr>
+            <div id="article-bottom-info">
+                <p>Share: [PLACEHOLDER]</p>
+                <p>About The Author: [PLACEHOLDER]</p>
+                <p>Tags: [PLACEHOLDER]</p>
+            </div>
+            <div class="center-content" style="font-size: 0.9em;">{% include logo.html %}</div>
+            <p style="font-size: 1.2em;">About</p>
+            <hr>
+        </div>
+        
+
+
+    </body>
+</html>
