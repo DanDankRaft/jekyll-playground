@@ -3,7 +3,7 @@
 layout: article
 
 title: The Rise of The Republicans
-#If this author has more than one article, make sure to spell it *exactly* the same as on the other articles
+#If this author has more than one article, make sure to spell it *exactly* the same as on the other
 author: Daniel Yahalom
 
 #image that will appear at the top of the article, in the thumbnail, and when article is shared on social media
