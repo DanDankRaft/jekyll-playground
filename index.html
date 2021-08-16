@@ -28,16 +28,33 @@
         </nav>
 
         <hr></hr>
-        <p>
+        <link rel="stylesheet" href="css/front-page.css">
+        <div id="article-thumbnails-top-parent"> 
+            {% for post in site.posts %}
+                {% if forloop.index0 < 4 %}
+                    <div class="article-thumbnail-top">
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.thumbnail }}" />
+                          <p>{{ post.title }}</p>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div id="article-thumbnails-bottom-parent">
+        <hr></hr>
         {% for post in site.posts %}
-        <p>
-            <a href="{{ post.url }}">
-                <img src="{{ post.thumbnail }}" />
-                <h2>{{ post.title }}</h2>
-                {{ post.excerpt }}
-            </a>
-        </p>
-      {% endfor %}
-    </p>
+            {% if forloop.index0 > 4 %}
+                    <div class="article-thumbnail-bottom">
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.thumbnail }}" />
+                            <p class="article-thumbnail-bottom-title">{{ post.title }}</p>
+                            <p class="article-thumbnail-date-section">By {{ post.author }}</p>
+                            <p class="article-thumbnail-bottom-excerpt">{{ post.excerpt }}</p>
+                        </a>
+                    </div>
+            {% endif %}
+        {% endfor %}
+        </div>
     </body>
 </html>

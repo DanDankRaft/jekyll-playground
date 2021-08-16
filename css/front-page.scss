@@ -1,0 +1,128 @@
+---
+
+---
+
+@import 'global';
+
+
+@media (max-aspect-ratio: 10/16)
+{
+    .article-thumbnail-top
+    {
+        width: 90vw;
+        height: auto;
+    }
+    .article-thumbnail-top img
+    {
+        width: 90vw;
+        height: 54vw;
+    }
+    .article-thumbnail-top p
+    {
+        width: 90vw;
+        height: auto;
+        font-size: 2em;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    #article-thumbnails-top-parent
+    {
+        width: 90vw;
+    }     
+}
+//wider landscape
+@media (min-aspect-ratio: 10/16) and (max-aspect-ratio: 1/1)
+{
+    *
+    {
+        --card-width: 45vw;
+    }
+    .article-thumbnail-top
+    {
+        width: var(--card-width);
+        height: auto;
+
+        float: left;
+        padding: 5px;
+
+        text-align: justify;
+    }
+    .article-thumbnail-top img
+    {
+        width: var(--card-width);
+        height: calc(var(--card-width) *  0.6);
+    }
+    .article-thumbnail-top p
+    {
+        width: var(--card-width);
+        height: calc(var(--card-width) *  0.2);
+
+        overflow: hidden;
+        text-align: center;
+
+        font-size: 1.2em;
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+    #article-thumbnails-top-parent
+    {
+        width: calc(var(--card-width) * 2.1);
+    }
+}
+//portrait mode
+@media (min-aspect-ratio: 1/1)
+{
+    *
+    {
+        --card-width: 22.5vw;
+    }
+    .article-thumbnail-top
+    {
+        width: var(--card-width);
+        height: auto;
+
+        float: left;
+        padding: 5px;
+
+        text-align: justify;
+    }
+    .article-thumbnail-top img
+    {
+        width: var(--card-width);
+        height: calc(var(--card-width) *  0.6);
+    }
+    .article-thumbnail-top p
+    {
+        width: var(--card-width);
+        height: auto;
+
+        overflow: hidden;
+        text-align: center;
+
+        font-size: 1em;
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+    #article-thumbnails-top-parent
+    {
+        width: max-content;
+    }
+}
+#article-thumbnails-top-parent
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article-thumbnails-top-parent::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.article-thumbnail-top img
+{
+    display: inline-block;
+    object-fit: cover;
+}
