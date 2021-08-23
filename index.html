@@ -41,18 +41,20 @@
                 {% endif %}
             {% endfor %}
         </div>
+
         <div id="article-thumbnails-bottom-parent">
-        <hr></hr>
+        <hr class="orange-divider"></hr>
         {% for post in site.posts %}
             {% if forloop.index0 > 4 %}
                     <div class="article-thumbnail-bottom">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.thumbnail }}" />
+                            <img class="article-thumbnail-image" src="{{ post.thumbnail }}" />
                             <p class="article-thumbnail-bottom-title">{{ post.title }}</p>
-                            <p class="article-thumbnail-date-section">By {{ post.author }}</p>
+                            <p class="article-thumbnail-date-section">By {{ post.author }} &#9679; {{ post.date | date: '%a. %b %e, %Y'}}</p>
                             <p class="article-thumbnail-bottom-excerpt">{{ post.excerpt }}</p>
                         </a>
                     </div>
+                    <hr class="orange-divider"></hr>
             {% endif %}
         {% endfor %}
         </div>

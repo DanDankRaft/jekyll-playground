@@ -126,3 +126,47 @@
     display: inline-block;
     object-fit: cover;
 }
+
+.orange-divider
+{
+    color: $site-orange;
+}
+
+*
+{
+    --card-height: 10vh;
+}
+
+.article-thumbnail-bottom
+{
+    min-height: var(--card-height);
+}
+
+.article-thumbnail-image
+{
+    width: calc(var(--card-height) / 0.6);
+    height: calc(var(--card-height));
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+
+.article-thumbnail-bottom-title
+{
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.article-thumbnail-date-section
+{
+    color: gray;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
+}
+.article-thumbnail-bottom-excerpt
+{
+    text-align: left;
+}
